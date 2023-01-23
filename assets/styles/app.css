@@ -1,0 +1,325 @@
+@import '~bootstrap';
+/*@import '~@fortawesome/fontawesome-free';*/
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~@fontsource/roboto-condensed';
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+
+body,
+input,
+select,
+textarea {
+    color: #333333f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 1680px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 9pt;
+    }
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 25em;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+        width: 26em;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -26em;
+    }
+}
+
+a {
+    -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+    border-bottom: dotted 1px;
+    color: #613b15;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-color: #613b15;
+    color: #613b15 !important;
+}
+
+a:hover strong {
+    color: inherit;
+}
+
+strong,
+b {
+    color: #29651f;
+    font-weight: 600;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p {
+    margin: 0 0 2em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #29651f;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0;
+}
+
+h1 {
+    font-size: 2.75em;
+    margin: 0 0 0.5em 0;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5 {
+    font-size: 0.9em;
+}
+
+h6 {
+    font-size: 0.7em;
+}
+
+@media screen and (max-width: 1680px) {
+    h1 {
+        font-size: 2.75em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+.inner {
+    padding: 0 6em 0.1em 6em;
+    margin: 0 auto;
+    max-width: 110em;
+}
+
+
+/* ################## Übernommener Style von vorherigem Theme ################### */
+
+/* Header */
+#header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    border-bottom: solid 5px #613b15;
+    padding: 6em 0 1em 0;
+    position: relative;
+}
+
+#header>* {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#header .logo {
+    border-bottom: 0;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+    font-size: 1em;
+}
+
+#header .icons {
+    text-align: right;
+}
+
+@media screen and (max-width: 1680px) {
+    #header {
+        padding-top: 5em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #header {
+        padding-top: 6.5em;
+    }
+
+    #header .logo {
+        font-size: 1.125em;
+        margin: 0;
+    }
+
+    #header .icons {
+        height: 5em;
+        line-height: 5em;
+        position: absolute;
+        right: -0.5em;
+        top: 0;
+    }
+}
+
+/* Icons */
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0;
+}
+
+ul.icons li .icon {
+    color: inherit;
+}
+
+ul.icons li .icon:before {
+    font-size: 1.25em;
+}
+
+/* Image */
+.image {
+    border-radius: 0.375em;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image img {
+    border-radius: 0.375em;
+    display: block;
+}
+
+.image.left,
+.image.right {
+    max-width: 40%;
+}
+
+.image.left img,
+.image.right img {
+    width: 100%;
+}
+
+.image.left {
+    float: left;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+.image.right {
+    float: right;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em;
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.image.fit img {
+    width: 100%;
+}
+
+.image.main {
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%;
+}
+
+.image.main img {
+    width: 100%;
+}
