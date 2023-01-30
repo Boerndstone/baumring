@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="d-flex" id="wrapper">
+		{% include 'parts/navigation.html.twig' %}
+		<div id="page-content-wrapper">
+			{% include 'parts/top-navigation.html.twig' %}
+			<div class="container-fluid">
+				<div class="inner">
+					{% include 'parts/top-contact.html.twig' %}
+					<h1 class="mt-4">Sondermaßnahmen</h1>
+					<p>Der Beruf als Baumpfleger bietet immer wieder neue Aufgaben. Hier sind ein paar Ausschnitte womit wir uns neben dem klassischen Baumschnitt noch beschäftigen. Es wird immer wieder Herausforderungen geben. Wir nehmen neue Herausforderungen an und arbeiten uns gerne in aktuelle Themen ein.</p>
+					<hr class="major">
+					<h2>Baumumfeldverbesserungen</h2>
+					<p>Ein Baum ist ein Lebewesen, wir müssen nur seine Sprache verstehen. Bäume zeigen uns Nährstoffmangel z.B. mit Blattverfärbungen. Wassermangel z.B. mit Totholzbildung. Statische Probleme mit Reaktionsholz. </p>
+					<p>Eine gute Möglichkeit auf die Sprache der Bäume zu reagieren ist es Probleme zu erkennen und die Bedingungen des Baumes zu verbessern. Wir können uns gerne ein Bild vom gesamten Baum und vom Boden machen. Oft sind es die kleinen Maßnahmen, die einen großen Effekt haben. Neben einer fachgerechten Pflege kann Ihr Baum z.B. mit einer einfachen Mykorrhiza-Impfung unterstützt werden. Uns geht es hierbei um eine zielgerichtete Maßnahme. Wir klären welche Probleme vorhanden sind und geben Ihnen gerne Tipps zur Möglichkeiten der Baumumfeldverbesserung.  </p>
+					<hr class="major">
+					<h2>Wurzelschutz / Baumschutz</h2>
+					<p>Bäume leben ca. 40 Prozent unterirdisch. Wurzeln sind für die Nährstoffversorgung und für die Verankerung im Boden verantwortlich. Baumaßnahmen im Wurzelbereich sind nicht nur Schädlich für den Baum, sondern Verändern das gesamte Bodengefüge. Der Wasserhaushalt, die Sauersoffversorgung im Boden und die zukünftige Durchwurzelbarkeit sind betroffen. Unerklärliche Gründe, warum ein Baum nach 10 Jahren eine massive Faulstelle im Wurzelstock hat, sind Märchengeschichten. Damit das nicht passiert können Bäume geschützt werden. Die RAS LP 4 ist das Regelwerk und beschreibt bzgl. Baumschutz den Stand der Technik. Wir als Fachfirma können Sie beraten, ob der Baum geschützt werden kann und welche Maßnahmen zum Erhalt Ihres Baumes möglich sind. Wenn Sie Ihren Baum fällen, werden Sie an dieser Stelle nie wieder einen Baum im ausgewachsenen Zustand erleben können. Die Entscheidung zur Fällung wird leider oft viel zu schnell gemacht oder wegen vergessenen Schutzmaßnahmen nötig. </p>
+					<div class="row">
+						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/wurzelschutz05.jpg') }}" alt="Wurzelschutz" title="Wurzelschutz"></span></div>
+						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/wurzelschutz02.jpg') }}" alt="Wurzelschutz" title="Wurzelschutz"></span></div>
+						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/high/wurzelschutz01.jpg') }}" alt="Wurzelschutz" title="Wurzelschutz"></span></div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							
+						<h2>Schädlingsbekämpfung / EPS / Rußrindenkrankeit</h2>
+							<p><span class="image left"><img src="{{ asset('build/images/smallImages/schaedlingsbekaepfung01.jpg') }}" alt="Schädlingsbekämpfung" title="Schädlingsbekämpfung"></span></p>
+							<p>Eichenprozessionsspinner oder Goldafter sind im Allgemeinen Raupen die zu Faltern werden. Sie ernähren sich von Blättern und bauen im Baum ihre Gespinste. Der Blattverlust ist in erster Linie nicht das Problem. Diese Insekten haben aber kleinste Härchen, auf die wir Menschen allergisch reagieren können. Angefangen von Hautrötungen bis zu massiver Atemnot. Wir entfernen diese Nester mit speziellen Schutzanzügen, Atemmasken und Schutzvorkehrungen, damit die Allergene nicht freigesetzt werden. </p>     
+							<p>Mit dem Klimawechsel verändern sich auch immer unsere Aufgaben. Wir können auf Anfrage auch Fällungen von Bäumen mit Rußrindenkrankeit anbieten oder bei der Suche nach dem Asiatischen Laubholzbock ALB unterstützen.</p> 
+							<p>Wir stehen bei allen Fragen rund um das Thema Baumschädlinge mit der LWF und der Hochschule Weihenstephan in engem Kontakt.</p> 
+						</div>
+					</div>
+					<hr class="major">
+					<h2>Entfernung von baumfremden Bewuchs</h2>
+					<p>Efeu kann ein gestalterisches Element sein und schafft Lebensräume. Sobald der Efeu die Krone erreicht, können jedoch Probleme auftauchen. Der Baum und die Kletterpflanze streiten sich um das Licht. Im Herbst/ Winter haben Laubbäume eigentlich keine Blattmasse und bieten dem Wind keine Angriffsfläche. Der immergrüne Efeu setzt der Baumkrone das ganze Jahr über ein Windsegel auf. Neben Efeu gibt es auch noch echte Parasiten, die Misteln. Misteln zählen zu alten Heilpflanzen, können einen Baum aber zum Absterben bringen. Sie entziehen dem Baum förmlich die Lebensenergie. Wir empfehlen immer einem frühen Befall entgegen zu wirken. Bei beiden Situationen ist der Zeitpunkt das Entscheidende. So früh wie möglich und außerhalb von Schutzzeiten. Artenschutz spielt hier eine sehr große Rolle.  </p>
+					<hr class="major">
+					{% include 'parts/links.html.twig' %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

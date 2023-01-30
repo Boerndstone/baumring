@@ -6,81 +6,77 @@
 		<div id="page-content-wrapper">
 			{% include 'parts/top-navigation.html.twig' %}
 			<div class="container-fluid">
-				<h1 class="mt-4">Baumpflege</h1>
-				<p>Wir sorgen dafür das Ihr Baum nicht nur sicher steht, sondern dabei natürlich aussieht und lange für Sie da ist. </p>
-				<span class="image main"><img src="public/images/fullScreen/baumpflege02.jpg" alt="Baumpflege" title="Baumpflege" /></span>
-				<p>Bäume wollen sich entfalten und nehmen Raum ein. Als Baumbesitzer haben Sie neben den vielen Vorteile der Bäume auch Pflichten. Wir helfen Ihnen bei der Entscheidung, ob Ihr Baum erhalten werden kann. Ob ihr Baum erhaltungswürdig ist können wir allerdings nur unterstützen. </p>
-				<div class="row">
-					<div class="col-12">
-						<h2>Totholzentfernung</h2>
-						<h3>Verkehrssicherheit herstellen – das Mindestmaß </h3>
-						<p><span class="image left"><img src="public/images/smallImages/totholz01.jpg" alt="Baumpflege" title="Baumpflege"></span>Tote Äste ab 3 cm Durchmesser können größere Schäden verursachen. Bevor das passiert, entfernen wir diese abgestorbenen Äste. Das ist für den Baum nicht schlimm. Dürre Äste unter 3 cm Durchmesser sind für die Verkehrssicherheit unbedeutend. Aus ästhetischen Gründen kann das allerdings auch gerne gemacht werden. </p>
+				<div class="inner">
+					{% include 'parts/top-contact.html.twig' %}
+					<h1 class="mt-4">Baumpflege</h1>
+					<p>Wir sorgen dafür das Ihr Baum nicht nur sicher steht, sondern dabei natürlich aussieht und lange für Sie da ist. </p>
+					<span class="image main"><img src="{{ asset('build/images/fullScreen/baumpflege02.jpg') }}" alt="Baumpflege" title="Baumpflege" /></span>
+					<p>Bäume wollen sich entfalten und nehmen Raum ein. Als Baumbesitzer haben Sie neben den vielen Vorteile der Bäume auch Pflichten. Wir helfen Ihnen bei der Entscheidung, ob Ihr Baum erhalten werden kann. Ob ihr Baum erhaltungswürdig ist können wir allerdings nur unterstützen. </p>
+					<div class="row">
+						<div class="col-12">
+							<h2>Totholzentfernung</h2>
+							<h3>Verkehrssicherheit herstellen – das Mindestmaß </h3>
+							<p><span class="image left"><img src="{{ asset('build/images/smallImages/totholz01.jpg') }}" alt="Baumpflege" title="Baumpflege"></span>Tote Äste ab 3 cm Durchmesser können größere Schäden verursachen. Bevor das passiert, entfernen wir diese abgestorbenen Äste. Das ist für den Baum nicht schlimm. Dürre Äste unter 3 cm Durchmesser sind für die Verkehrssicherheit unbedeutend. Aus ästhetischen Gründen kann das allerdings auch gerne gemacht werden. </p>
+						</div>
 					</div>
-				</div>
-				<hr class="major">
-				<div class="row">
-					<div class="col-12">
-						<h2>Kronenpflege</h2>
-						<h3>Langfristige Verkehrssicherheit herstellen – das Rundumpaket</h3>
-						<p><span class="image right"><img src="public/images/smallImages/kronenpflege02.jpg" alt="Baumpflege" title="Baumpflege"></span>Neben der Entfernung von Totästen / absterbende Äste kümmern wir uns um gebrochene Äste. Außerdem entfernen wir Schwachäste, die zu unerwünschten Entwicklungen führen oder zu nah in die Fahrbahn reichen. Reibende Schwachäste werden entfernt, damit langfristig weniger Äste absterben.</p>
-						<p>Die Baumform bleibt erhalten und die Krone wird durch die Maßnahme nicht verkleinert.</p>
+					<hr class="major">
+					<div class="row">
+						<div class="col-12">
+							<h2>Kronenpflege</h2>
+							<h3>Langfristige Verkehrssicherheit herstellen – das Rundumpaket</h3>
+							<p><span class="image right"><img src="{{ asset('build/images/smallImages/kronenpflege02.jpg') }}" alt="Baumpflege" title="Baumpflege"></span>Neben der Entfernung von Totästen / absterbende Äste kümmern wir uns um gebrochene Äste. Außerdem entfernen wir Schwachäste, die zu unerwünschten Entwicklungen führen oder zu nah in die Fahrbahn reichen. Reibende Schwachäste werden entfernt, damit langfristig weniger Äste absterben.</p>
+							<p>Die Baumform bleibt erhalten und die Krone wird durch die Maßnahme nicht verkleinert.</p>
+						</div>
 					</div>
-				</div>
-				<hr class="major">
-				<div class="row">
-					<div class="col-12">
-						<h2>Einbau von Kronensicherungen</h2>
-						<p><span class="image left"><img src="public/images/smallImages/kronensicherung02.jpg" alt="Baumpflege" title="Baumpflege"></span>Um Bäume zu unterstützen oder einen zusätzlichen Sicherheitspuffer zu geben, können Seile zur Stabilisierung in die Baumkrone eingebaut werden. Vor allem Bäume wo Schnittmaßnahmen nicht gut heilen profitieren davon. Bevor wir ein Kronensicherungssystem verbauen oder empfehlen bekommen Sie immer eine fachlich fundierte Beurteilung. Kronensicherungen werden als Haltesicherung oder dynamische oder statische Sicherung verbaut. Wir achten dabei auf: Welches Problem soll behoben werden und kann eine Kronensicherung diese Funktion erfüllen. </p>
+					<hr class="major">
+					<div class="row">
+						<div class="col-12">
+							<h2>Einbau von Kronensicherungen</h2>
+							<p><span class="image left"><img src="{{ asset('build/images/smallImages/kronensicherung02.jpg') }}" alt="Baumpflege" title="Baumpflege"></span>Um Bäume zu unterstützen oder einen zusätzlichen Sicherheitspuffer zu geben, können Seile zur Stabilisierung in die Baumkrone eingebaut werden. Vor allem Bäume wo Schnittmaßnahmen nicht gut heilen profitieren davon. Bevor wir ein Kronensicherungssystem verbauen oder empfehlen bekommen Sie immer eine fachlich fundierte Beurteilung. Kronensicherungen werden als Haltesicherung oder dynamische oder statische Sicherung verbaut. Wir achten dabei auf: Welches Problem soll behoben werden und kann eine Kronensicherung diese Funktion erfüllen. </p>
+						</div>
 					</div>
-				</div>
-				<hr class="major">
-				<div class="row">
-					<div class="col-12">
-						<h2>Lichtraumprofil</h2>
-						<p><span class="image right"><img src="public/images/smallImages/lichtraumprofil02.jpg" alt="Baumpflege" title="Baumpflege"></span>Das ist die Herstellung des Lichten Raumes über der Fahrbahn oder von Feuerwehreinfahrt auf 4,5 m Höhe. Auf Rad-/Gehwege gilt 2,5 m Höhe. Hintergrund ist einerseits, dass kein LKW Äste abreißen sollen und sich andererseits keine Passanten verletzen können. </p>
+					<hr class="major">
+					<div class="row">
+						<div class="col-12">
+							<h2>Lichtraumprofil</h2>
+							<p><span class="image right"><img src="{{ asset('build/images/smallImages/lichtraumprofil02.jpg') }}" alt="Baumpflege" title="Baumpflege"></span>Das ist die Herstellung des Lichten Raumes über der Fahrbahn oder von Feuerwehreinfahrt auf 4,5 m Höhe. Auf Rad-/Gehwege gilt 2,5 m Höhe. Hintergrund ist einerseits, dass kein LKW Äste abreißen sollen und sich andererseits keine Passanten verletzen können. </p>
+						</div>
 					</div>
-				</div>
-				<hr class="major">
-				<h2>Formschnitt</h2>
-				<p>Hierbei geht es um das Entfernen des <u>jährlichen</u> Zuwachses. Das ist z.B. der klassische Heckenschnitt. </p>
-				<p>Sträucher schneiden wir mit der Rosenschere per Hand und nicht mit der Heckenschere, weil uns ein natürlicher Schnitt wichtig ist. So können wir eine natürliche Form behalten und verpassen die Blüte nicht.</p>
-				<hr class="major">
-				<div class="row">
-					<div class="col-12">
-						<h2>Jungbaumpflege</h2>
-						<p><span class="image right"><img src="public/images/smallImages/jungbaumpflege01.jpg" alt="Baumpflege" title="Baumpflege"></span>Der erste Schnitt kann die gesamte Zukunft des Baumes beeinflussen. Ein früher Aufbau- oder Erziehungsschnitt kann gezielt unerwünschte Wuchsformen begleichen. Junge Bäume  </p>
+					<hr class="major">
+					<h2>Formschnitt</h2>
+					<p>Hierbei geht es um das Entfernen des <u>jährlichen</u> Zuwachses. Das ist z.B. der klassische Heckenschnitt. </p>
+					<p>Sträucher schneiden wir mit der Rosenschere per Hand und nicht mit der Heckenschere, weil uns ein natürlicher Schnitt wichtig ist. So können wir eine natürliche Form behalten und verpassen die Blüte nicht.</p>
+					<hr class="major">
+					<div class="row">
+						<div class="col-12">
+							<h2>Jungbaumpflege</h2>
+							<p><span class="image right"><img src="{{ asset('build/images/smallImages/jungbaumpflege01.jpg') }}" alt="Baumpflege" title="Baumpflege"></span>Der erste Schnitt kann die gesamte Zukunft des Baumes beeinflussen. Ein früher Aufbau- oder Erziehungsschnitt kann gezielt unerwünschte Wuchsformen begleichen. Junge Bäume  </p>
+						</div>
 					</div>
-				</div>
-				<hr class="major">
-				<h2>Stark eingreifende Schnittmaßnahmen</h2>
-				<p>Je mehr geschnitten wird, desto mehr gleicht der Baum den Blattverlust aus. Bei vitalen Bäumen bedeutet ein massiver Schnitt immer verstärkter Neuaustrieb. Damit lässt sich ein Baum nur mit sehr viel Aufwand in Zaum halten. Der Kontroll- und Pflegeaufwand erhöhen sich.</p>
-				<p>Bei geltenden Baumschutzsatzungen muss dafür im Zweifel eine Erlaubnis eingeholt werden - „Antrag für baumverändernde Maßnahmen“</p>
-				<p>Alternativ können wir mit vielen kleinen Schnitten den Baum weniger ärgern und trotzdem das Ziel erreichen, die Krone zu reduzieren.</p>
-				<hr class="major">
-				<h2>Kroneneinkürzung oder Einkürzung von Kronenteilen</h2>
-				<div class="row">
-					<div class="col-12">
-						<p><span class="image left"><img src="public/images/smallImages/schnittmassnahmen01.jpg" alt="Schnittmassnahme" title="Schnittmassnahme"></span>
-						<span class="image left"><img src="public/images/smallImages/schnittmassnahmen02.jpg" alt="Schnittmassnahme" title="Schnittmassnahme"></span>
-						Wir empfehlen einen starken Rückschnitt nur wenn es für die Verkehrssicherheit Sinn macht. Eine Verkleinerung der Krone kann z.B. die Windangriffsfläche verringern. Eine asymmetrische Krone kann durch einen Schnitt ausgeglichen werden, um Drehbewegungen im Stamm zu vermeiden.</p>
-						<p>Dabei gilt immer – was soll damit erreicht werden.</p>
+					<hr class="major">
+					<h2>Stark eingreifende Schnittmaßnahmen</h2>
+					<p>Je mehr geschnitten wird, desto mehr gleicht der Baum den Blattverlust aus. Bei vitalen Bäumen bedeutet ein massiver Schnitt immer verstärkter Neuaustrieb. Damit lässt sich ein Baum nur mit sehr viel Aufwand in Zaum halten. Der Kontroll- und Pflegeaufwand erhöhen sich.</p>
+					<p>Bei geltenden Baumschutzsatzungen muss dafür im Zweifel eine Erlaubnis eingeholt werden - „Antrag für baumverändernde Maßnahmen“</p>
+					<p>Alternativ können wir mit vielen kleinen Schnitten den Baum weniger ärgern und trotzdem das Ziel erreichen, die Krone zu reduzieren.</p>
+					<hr class="major">
+					<h2>Kroneneinkürzung oder Einkürzung von Kronenteilen</h2>
+					<div class="row">
+						<div class="col-12">
+							<p><span class="image left"><img src="{{ asset('build/images/smallImages/schnittmassnahmen01.jpg') }}" alt="Schnittmassnahme" title="Schnittmassnahme"></span>
+							<span class="image left"><img src="{{ asset('build/images/smallImages/schnittmassnahmen02.jpg') }}" alt="Schnittmassnahme" title="Schnittmassnahme"></span>
+							Wir empfehlen einen starken Rückschnitt nur wenn es für die Verkehrssicherheit Sinn macht. Eine Verkleinerung der Krone kann z.B. die Windangriffsfläche verringern. Eine asymmetrische Krone kann durch einen Schnitt ausgeglichen werden, um Drehbewegungen im Stamm zu vermeiden.</p>
+							<p>Dabei gilt immer – was soll damit erreicht werden.</p>
+						</div>
 					</div>
+					<hr class="major">
+					<h2>Stark geschädigte Bäume vorangegangener Kappungen</h2>
+					<p>Eine Kappung ist keine fachgerechte Baumpflege und eine nachhaltige Schädigung des Baumes. Ein verschnittener Baum kann nur durch einen regelmäßigen und gezielten Schnitt wieder aufgebaut werden. Bäume reagieren massiv mit Ersatztrieben, Wasserreisern oder Reiteraten. Diese Neuaustriebe wachsen sehr schnell und das leider an einer Stelle wo die Anbindung immer schlecht wird. Große Schnitte öffnen die Pforten für Pilze und andere Schadorganismen.</p>
+					<hr class="major">
+					<h2>Kronensicherungsschnitt</h2>
+					<p>Ausnahme kann ein Kronensicherungsschnitt z.B. bei alten oder stark geschädigten Bäumen sein. Ziel ist es hier einen Baum noch ein paar Jahre zu erhalten. Natur- oder Artenschutz können dafür Gründe sein. Die Maßnahme ist allerdings nichts anderes als eine schrittweise Fällung.</p>
+					<hr class="major">
+					{% include 'parts/links.html.twig' %}
 				</div>
-				<hr class="major">
-				<h2>Stark geschädigte Bäume vorangegangener Kappungen</h2>
-				<p>Eine Kappung ist keine fachgerechte Baumpflege und eine nachhaltige Schädigung des Baumes. Ein verschnittener Baum kann nur durch einen regelmäßigen und gezielten Schnitt wieder aufgebaut werden. Bäume reagieren massiv mit Ersatztrieben, Wasserreisern oder Reiteraten. Diese Neuaustriebe wachsen sehr schnell und das leider an einer Stelle wo die Anbindung immer schlecht wird. Große Schnitte öffnen die Pforten für Pilze und andere Schadorganismen.</p>
-				<hr class="major">
-				<h2>Kronensicherungsschnitt</h2>
-				<p>Ausnahme kann ein Kronensicherungsschnitt z.B. bei alten oder stark geschädigten Bäumen sein. Ziel ist es hier einen Baum noch ein paar Jahre zu erhalten. Natur- oder Artenschutz können dafür Gründe sein. Die Maßnahme ist allerdings nichts anderes als eine schrittweise Fällung.</p>
-				<hr class="major">
-				<h4>Weitere Leistungen</h4>
-				<ul>
-					<li><a href="<?php echo BASE_URL; ?>faellungen">Fällungen</a></li>
-					<li><a href="<?php echo BASE_URL; ?>pflanzungen">Pflanzungen</a></li>
-					<li><a href="<?php echo BASE_URL; ?>wurzelstockentfernung">Wurzelstockentfernung</a></li>
-					<li><a href="<?php echo BASE_URL; ?>baumkontrolle">Baumkontrolle</a></li>
-					<li><a href="<?php echo BASE_URL; ?>sondermassnahmen">Sondermaßnahmen</a></li>
-				</ul>
 			</div>
 		</div>
 	</div>

@@ -24,7 +24,7 @@ Encore
     //to: 'images/[path][name].[hash:8].[ext]',
 
     // only copy files matching this pattern
-    pattern: /\.(png|jpg|jpeg)$/,
+    pattern: /\.(png|jpg|jpeg|svg)$/,
   })
 
   /*
@@ -44,6 +44,9 @@ Encore
   // will require an extra script tag for runtime.js
   // but, you probably want this, unless you're building a single-page app
   .enableSingleRuntimeChunk()
+
+  // enables Sass/SCSS support
+  .enableSassLoader()
 
   /*
    * FEATURE CONFIG
@@ -68,9 +71,6 @@ Encore
     config.useBuiltIns = "usage";
     config.corejs = "3.23";
   });
-
-// enables Sass/SCSS support
-//.enableSassLoader()
 
 // uncomment if you use TypeScript
 //.enableTypeScriptLoader()

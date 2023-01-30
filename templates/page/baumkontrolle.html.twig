@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="d-flex" id="wrapper">
+		{% include 'parts/navigation.html.twig' %}
+		<div id="page-content-wrapper">
+			{% include 'parts/top-navigation.html.twig' %}
+			<div class="container-fluid">
+                <div class="inner">
+					{% include 'parts/top-contact.html.twig' %}
+					<h1 class="mt-4">Baumkontrolle</h1>
+					<p>Als Baumbesitzer liegt es in Ihrer Verantwortung, dass Ihr Baum verkehrssicher ist. Doch nicht immer ist auf den ersten Blick erkennbar, ob von einem Baum eine Gefährdung ausgeht: ein vitaler Baum ist nicht automatisch stabil.</p>
+					<span class="image main"><img src="{{ asset('build/images/fullScreen/kataster01.jpg') }}" alt="Baumkontrolle" title="Baumkontrolle"/></span>
+					<p>Im Schadensfall werden Sie oft von Versicherung gefragt, ob der Baum vorher überhaupt gesund oder stabil war. Mit einer fachlich qualifizierten Baumkontrolle durch eine Fachfirma schaffen Sie sich Sicherheit. Wir geben Ihnen ein ehrliches Bild und beraten Sie gerne.</p>
+					<hr class="major">
+					<h2>Regelkontrolle</h2>
+					<p>Damit Sie jederzeit auf der (verkehrs)sicheren Seite stehen, bieten wir Ihnen Sichtkontrollen sowie eine ausführliche Beratung an. Die Kontrollen werden gemäß der FLL-Baumkontrollrichtlinien mit der VTA Methode durchgeführt. Wir dokumentieren den aktuellen Zustand Ihres Baumes und Anzeichen für eine eventuelle Gefährdung (Schädlingsbefall, mechanische Schäden, etc.).</p>
+					<p>In der anschließenden Beratung empfehlen wir Ihnen ggf. geeignete Maßnahmen, um die Verkehrssicherheit des Baumes wiederherzustellen. Eine Fällung ist dabei übrigens nur das letzte Mittel.</p>
+					<div class="row">
+						<div class="col-12">
+							<h2>Kataster</h2>
+							<p><span class="image right"><img src="{{ asset('build/images/smallImages/baumkataster01.jpg') }}" alt="Baumkontrolle" title="Baumkontrolle"></span>
+							Ab einem größeren Baumbestand lohnt es sich eine Zusammenfassung aller Baumkontrollen ins Leben zu Rufen. Das geschieht am Besten in Form einer Datenbank, dem Baumkataster. Dort werden alle wichtigen Daten erfasst und ein planvolles Umsetzen ermöglicht. Prioritäten können gesetzt werden. Maßnahmen können besser geplant und strukturiert abgearbeitet werden. Nichts wird vergessen und Sie bekommen einen qualifizierten Nachweis der Baumkontrolle für Ihre Versicherung.  </p>
+						</div>
+					</div>
+					<hr class="major">
+					<h2>Artenschutzrechtliche Prüfungen</h2>
+					<p>Artenschutz beschäftigt uns das ganze Jahr über. Im Naturschutzgesetz geht es aber nicht nur Vögel, sondern auch um Fledermäuse, Säugetiere, Reptilien, usw.</p>
+					<p>Die §§ 39 und 44 BNSchG regeln hierbei den allgemeinen bzw. den speziellen Artenschutz. Vögel sind vom 1. März bis 30. September geschützt und Fledermäuse vom 1. Oktober bis 31. März. Also das ganze Jahr über. Uns als Fachfirma ist Artenschutz wichtig. Deshalb führen wir generell eine Prüfung durch, ob sich Tiere im Baum oder in Hecken befinden bevor es los geht. Für reine spezielle Artenschutzrechtliche Prüfungen arbeiten wir mit Biologen/innen zusammen. Hierbei kommen neben Artenkenntnis auch technische Hilfsmittel wie Teleskopkameras oder Wärmebildgeräte zum Einsatz. Wenn wir nicht mit Seilklettertechnik oder Hebebühnen an bestimmte Bereiche kommen, können wir alternativ auch eine Drohne einsetzen.  </p>
+					<hr class="major">
+					{% include 'parts/links.html.twig' %}
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

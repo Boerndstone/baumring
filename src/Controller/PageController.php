@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PageController extends AbstractController
 {
-    #[Route('/', name: 'app_page')]
+    #[Route('/', name: 'startseite')]
     public function index(): Response
     {
         return $this->render('page/index.html.twig', [
@@ -16,90 +16,114 @@ class PageController extends AbstractController
         ]);
     }
 
-    #[Route('/about', name: 'app_page_about')]
-    public function about(): Response
+    #[Route('/ueberuns', name: 'ueberuns')]
+    public function ueberuns(): Response
     {
-        return $this->render('page/about.html.twig', [
+        return $this->render('page/ueberuns.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/house', name: 'app_page_house')]
-    public function house(): Response
+    #[Route('/hausbaumgarten', name: 'hausbaumgarten')]
+    public function hausbaumgarten(): Response
     {
-        return $this->render('page/house.html.twig', [
+        return $this->render('page/hausbaumgarten.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/property-management', name: 'app_page_property_management')]
-    public function property_management(): Response
+    #[Route('/hausverwaltungen', name: 'hausverwaltungen')]
+    public function hausverwaltungen(): Response
     {
-        return $this->render('page/property-management.html.twig', [
+        return $this->render('page/hausverwaltungen.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/community', name: 'app_page_community')]
-    public function community(): Response
+    #[Route('/gemeinden', name: 'gemeinden')]
+    public function gemeinden(): Response
     {
-        return $this->render('page/community.html.twig', [
+        return $this->render('page/gemeinden.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/baumpflege', name: 'app_page_baumpflege')]
-    public function tree_care(): Response
+    #[Route('/firmengelaende', name: 'firmengelaende')]
+    public function firmengelaende(): Response
+    {
+        return $this->render('page/firmengelaende.html.twig', [
+            'controller_name' => 'PageController',
+        ]);
+    }
+
+    #[Route('/baumpflege', name: 'baumpflege')]
+    public function baumpflege(): Response
     {
         return $this->render('page/baumpflege.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/lumber', name: 'app_page_lumber')]
-    public function lumber(): Response
+    #[Route('/faellungen', name: 'faellungen')]
+    public function faellungen(): Response
     {
-        return $this->render('page/lumber.html.twig', [
+        return $this->render('page/faellungen.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/planting', name: 'app_page_planting')]
-    public function planting(): Response
+    #[Route('/pflanzungen', name: 'pflanzungen')]
+    public function pflanzungen(): Response
     {
-        return $this->render('page/planting.html.twig', [
+        return $this->render('page/pflanzungen.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/rootstock', name: 'app_page_rootstock')]
-    public function rootstock(): Response
+    #[Route('/wurzelstockentfernung', name: 'wurzelstockentfernung')]
+    public function wurzelstockentfernung(): Response
     {
-        return $this->render('page/rootstock.html.twig', [
+        return $this->render('page/wurzelstockentfernung.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/control', name: 'app_page_control')]
+    #[Route('/baumkontrolle', name: 'baumkontrolle')]
     public function control(): Response
     {
-        return $this->render('page/control.html.twig', [
+        return $this->render('page/baumkontrolle.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/special-action', name: 'app_page_special_action')]
+    #[Route('/sondermassnahmen', name: 'sondermassnahmen')]
     public function special_action(): Response
     {
-        return $this->render('page/special-action.html.twig', [
+        return $this->render('page/sondermassnahmen.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
 
-    #[Route('/reference', name: 'app_page_reference')]
+    #[Route('/referenzen', name: 'referenzen')]
     public function reference(): Response
     {
-        return $this->render('page/reference.html.twig', [
+        return $this->render('page/referenzen.html.twig', [
+            'controller_name' => 'PageController',
+        ]);
+    }
+
+    #[Route('/impressum', name: 'impressum')]
+    public function impressum(): Response
+    {
+        return $this->render('page/impressum.html.twig', [
+            'controller_name' => 'PageController',
+        ]);
+    }
+
+    #[Route('/datenschutz', name: 'datenschutz')]
+    public function datenschutz(): Response
+    {
+        return $this->render('page/datenschutz.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }

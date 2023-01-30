@@ -8,19 +8,19 @@
 			<div class="container-fluid">
 				<div class="inner">
 					{% include 'parts/top-contact.html.twig' %}
-					<h1 class="mt-4">Jeder Baum ist einzigartig, wir behandeln Ihn auch so…</h1>
+					<h1 class="mt-4 text-primary">Jeder Baum ist einzigartig, wir behandeln Ihn auch so…</h1>
 					<span class="image main">
 						<img src="{{ asset('build/images/fullScreen/startseite.jpg') }}" alt="Baumpflege" title="Baumpflege">
 					</span>
 					<p>Wir sind Ihr kompetenter Partner für alle Arbeiten um das Thema Baum: Baumpflege, Kontrollen, Pflanzungen und Fällungen. Egal ob im
-						<a href="hausbaumgarten">
+						<a href="{{ path('hausbaumgarten') }}">
 							<b>privaten Garten</b>
 						</a>, in
-						<a href="hausverwaltungen">
+						<a href="{{ path('hausverwaltungen') }}">
 							<b>Wohnanlagen</b>
 						</a>
 						oder für
-						<a href="gemeinden">
+						<a href="{{ path('gemeinden') }}">
 							<b>öffentliche Auftraggeber</b>
 						</a>
 						arbeiten. Wir verbinden die Bedürfnisse des Menschen mit den Ansprüchen der Bäume. Dazu beurteilen wir die Möglichkeit der Umsetzung und die Vereinbarkeit mit dem Artenschutz.</p>
