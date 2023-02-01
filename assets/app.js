@@ -10,8 +10,10 @@ import "./styles/custom.scss";
 import "./styles/app.css";
 
 // custom js for the theme
-import "bootstrap";
 import "./js/sidebar.js";
 
 // start the Stimulus application
 import "./bootstrap";
+
+import * as mdb from "mdb-ui-kit"; // lib
+window.mdb = mdb;
