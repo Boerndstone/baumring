@@ -464,7 +464,7 @@ ul.contact li a {
 
 @media screen and (max-width: 736px) {
     .inner {
-        padding: 0 2em 0.1em 2em;
+        padding: 0 2em 0.1em 0;
     }
 
     .inner>section {
