@@ -1,2 +1,7 @@
 $primary: #29651f;
-@import "~mdb-ui-kit/src/scss/mdb.free.scss";
+@import "~mdb-ui-kit/src/mdb/scss/mdb.pro.scss";
+
+.btn-outline-primary {
+    border: 1px solid $primary;
+    padding: .25rem;
+}

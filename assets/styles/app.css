@@ -3,6 +3,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
+
 body,
 input,
 select,
@@ -472,3 +473,11 @@ ul.contact li a {
     }
 }
 
+@media (min-width: 1400px) {
+
+    main,
+    header,
+    #main-navbar {
+        padding-left: 240px;
+    }
+}

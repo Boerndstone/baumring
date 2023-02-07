@@ -27,6 +27,6 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "mdb-ui-kit": "^6.1.0"
+        "mdb-ui-kit": "git+https://oauth2:8UN9qtVbjroytFnMJMW2@git.mdbootstrap.com/mdb/standard/mdb-ui-kit-pro-advanced"
     }
 }

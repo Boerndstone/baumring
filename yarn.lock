@@ -2885,10 +2885,9 @@ make-dir@^3.0.2, make-dir@^3.1.0:
   dependencies:
     semver "^6.0.0"
 
-mdb-ui-kit@^6.1.0:
+"mdb-ui-kit@git+https://oauth2:8UN9qtVbjroytFnMJMW2@git.mdbootstrap.com/mdb/standard/mdb-ui-kit-pro-advanced":
   version "6.1.0"
-  resolved "https://registry.yarnpkg.com/mdb-ui-kit/-/mdb-ui-kit-6.1.0.tgz#48300cb9a93779449f785fc264cc3c7f1a5fefbb"
-  integrity sha512-DH67wVJMfP4XRg74SYcqTDxGYWPhT7OZjBAlu05J41HrawHvag4xXnlQCkJGpiM0YFQsnFQ5QqpXg/XZbwzY0w==
+  resolved "git+https://oauth2:8UN9qtVbjroytFnMJMW2@git.mdbootstrap.com/mdb/standard/mdb-ui-kit-pro-advanced#521960e3d5797e2769493995bff0d34bd5ebf672"
 
 mdn-data@2.0.14:
   version "2.0.14"
