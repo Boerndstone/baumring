@@ -5,19 +5,17 @@
 		{% include 'parts/navigation.html.twig' %}
 		<div id="page-content-wrapper">
 			{% include 'parts/top-navigation.html.twig' %}
-			<div class="container-fluid">
-				<div class="inner">
-					{% include 'parts/top-contact.html.twig' %}
-					<h1 class="mt-4">Referenzen</h1>
-					<div class="row">
-						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen01.jpg') }}" alt="Fällungen" title="Fällungen"></span><!--Risikofällung in Oberhausen--></div>
-						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen02.jpg') }}" alt="Ersatzpflanzung" title="Ersatzpflanzung"></span><!--Ersatzpflanzung in Unterhausen--></div>
-						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen03.jpg') }}" alt="Materialwarung" title="Materialwarung"></span><!--Materialwarung Germering - Lkr. Fürstenfeldbruck--></div>
-						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen04.jpg') }}" alt="Pflanzung" title="Pflanzung"></span><!--Begrühnung in Vorderhausen--></div>
-						<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen05.jpg') }}" alt="Baufeldräumung" title="Baufeldräumung"></span><!--Baufeldräumung in Hinterhausen--></div>
-					</div>
+			<div class="container-fluid px-lg-5">
+				<h1 class="mt-4">Referenzen</h1>
+				<div class="row">
+					<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen01.jpg') }}" alt="Fällungen" title="Fällungen"></span><!--Risikofällung in Oberhausen--></div>
+					<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen02.jpg') }}" alt="Ersatzpflanzung" title="Ersatzpflanzung"></span><!--Ersatzpflanzung in Unterhausen--></div>
+					<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen03.jpg') }}" alt="Materialwarung" title="Materialwarung"></span><!--Materialwarung Germering - Lkr. Fürstenfeldbruck--></div>
+					<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen04.jpg') }}" alt="Pflanzung" title="Pflanzung"></span><!--Begrühnung in Vorderhausen--></div>
+					<div class="col-4"><span class="image fit"><img src="{{ asset('build/images/low/referenzen05.jpg') }}" alt="Baufeldräumung" title="Baufeldräumung"></span><!--Baufeldräumung in Hinterhausen--></div>
 				</div>
 			</div>
 		</div>
 	</div>
+	{% include 'parts/footer.html.twig' %}
 {% endblock %}

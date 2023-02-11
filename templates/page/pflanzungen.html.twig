@@ -5,29 +5,27 @@
 		{% include 'parts/navigation.html.twig' %}
 		<div id="page-content-wrapper">
 			{% include 'parts/top-navigation.html.twig' %}
-			<div class="container-fluid">
-				<div class="inner">
-					{% include 'parts/top-contact.html.twig' %}
-					<h1>Pflanzungen</h1>
-					<p>Grün ist gut für unsere Seele. Farben machen uns glücklich. Eine planvolle Gartengestaltung kann nicht nur ästhetisch ansprechend, sondern auch noch an Ihre Bedürfnisse angepasst werden. Was ist Ihnen wichtig? Geht es Ihnen um heimische Pflanzen oder geht es Ihnen um ein bestimmtes Thema? Unsere Stärke ist es Bäume in Ihr Gartenkonzept zu integrieren. Sichtachsen zu finden um gezielt Bereiche in Szene zu setzen.</p>
-					<hr class="major">
-					<div class="row">
-						<div class="col-12">
-							<h2>Ersatzpflanzungen</h2>
-							<p><span class="image left"><img src="{{ asset('build/images/smallImages/pflanzung01.jpg') }}" alt="Pflanzungen" title="Pflanzungen"></span>Bevor Sie einen Baum fällen, kann es sein das Sie im Anschluss den Verlust ersetzen müssen. Ersatzpflanzungen müssen vor allem in Städten und Gemeinden gemacht werden wo es eine Baumschutzverordnung gibt oder Bäume im Bebauungsplan als schützenswert eingetragen sind. Normalerweise werden dann von behördlicher Seite bereits größere Bäume mit einem Stammumfang von 16-20 cm gefordert. Ohne die passenden Geräte kann das zum Kraftakt werden. Für die technische Umsetzung setzen wir auf Maschinen, die durch jedes Gartentürchen passen. Wir beraten Sie im Vorfeld zum Standort und den Eigenschaften der Baumarten. Es geht uns darum Ihnen vorausschauend Optionen zu geben, damit Sie eine gute Entscheidungsgrundlage haben.</p>
-						</div>
+			<div class="container-fluid px-lg-5">
+				<h1 class="mt-4">Pflanzungen</h1>
+				<p>Grün ist gut für unsere Seele. Farben machen uns glücklich. Eine planvolle Gartengestaltung kann nicht nur ästhetisch ansprechend, sondern auch noch an Ihre Bedürfnisse angepasst werden. Was ist Ihnen wichtig? Geht es Ihnen um heimische Pflanzen oder geht es Ihnen um ein bestimmtes Thema? Unsere Stärke ist es Bäume in Ihr Gartenkonzept zu integrieren. Sichtachsen zu finden um gezielt Bereiche in Szene zu setzen.</p>
+				<hr class="major">
+				<div class="row">
+					<div class="col-12">
+						<h2>Ersatzpflanzungen</h2>
+						<p><span class="image left"><img src="{{ asset('build/images/smallImages/pflanzung01.jpg') }}" alt="Pflanzungen" title="Pflanzungen"></span>Bevor Sie einen Baum fällen, kann es sein das Sie im Anschluss den Verlust ersetzen müssen. Ersatzpflanzungen müssen vor allem in Städten und Gemeinden gemacht werden wo es eine Baumschutzverordnung gibt oder Bäume im Bebauungsplan als schützenswert eingetragen sind. Normalerweise werden dann von behördlicher Seite bereits größere Bäume mit einem Stammumfang von 16-20 cm gefordert. Ohne die passenden Geräte kann das zum Kraftakt werden. Für die technische Umsetzung setzen wir auf Maschinen, die durch jedes Gartentürchen passen. Wir beraten Sie im Vorfeld zum Standort und den Eigenschaften der Baumarten. Es geht uns darum Ihnen vorausschauend Optionen zu geben, damit Sie eine gute Entscheidungsgrundlage haben.</p>
 					</div>
-					<hr class="major">
-					<div class="row">
-						<div class="col-12">
-							<h2>Ökologische Gartengestaltung – Bienenfreundliche Gärten</h2>
-							<p><span class="image right"><img src="{{ asset('build/images/smallImages/pflanzung02.jpg') }}" alt="Pflanzungen" title="Pflanzungen"></span>Jeder von uns profitiert von den fleißigen Helfern. Und auch im eigenen Garten kann jeder einen Beitrag dazu leisten, den Lebensraum der wichtigen Insekten zu erhalten. Wir beraten Sie gerne, wie Sie Ihren Garten bienenfreundlich gestalten können. Unser von einem Imker mitentwickeltes Konzept vereint dabei Ökologie und Ästhetik. Denn es gibt zwar viele Sträucher und Bäume, die als besonders bienenfreundlich gelten, aber meistens blühen sie zu ähnlichen Zeiten. Wir achten daher darauf, die Hungerphasen der Bienen zu minimieren und Ihnen vom Frühjahr bis zum Herbst ein Blütenmeer zu gewährleisten. Als Maßnahmen bieten wir Ihnen hierzu fachgerechte Pflanzungen als Ergänzung und die Gartenpflege Ihres bereits vorhandenen Baum- und Strauchbestandes an.</p>
-						</div>
-					</div>
-					<hr class="major">
-					{% include 'parts/links.html.twig' %}
 				</div>
+				<hr class="major">
+				<div class="row">
+					<div class="col-12">
+						<h2>Ökologische Gartengestaltung – Bienenfreundliche Gärten</h2>
+						<p><span class="image right"><img src="{{ asset('build/images/smallImages/pflanzung02.jpg') }}" alt="Pflanzungen" title="Pflanzungen"></span>Jeder von uns profitiert von den fleißigen Helfern. Und auch im eigenen Garten kann jeder einen Beitrag dazu leisten, den Lebensraum der wichtigen Insekten zu erhalten. Wir beraten Sie gerne, wie Sie Ihren Garten bienenfreundlich gestalten können. Unser von einem Imker mitentwickeltes Konzept vereint dabei Ökologie und Ästhetik. Denn es gibt zwar viele Sträucher und Bäume, die als besonders bienenfreundlich gelten, aber meistens blühen sie zu ähnlichen Zeiten. Wir achten daher darauf, die Hungerphasen der Bienen zu minimieren und Ihnen vom Frühjahr bis zum Herbst ein Blütenmeer zu gewährleisten. Als Maßnahmen bieten wir Ihnen hierzu fachgerechte Pflanzungen als Ergänzung und die Gartenpflege Ihres bereits vorhandenen Baum- und Strauchbestandes an.</p>
+					</div>
+				</div>
+				<hr class="major">
+				{% include 'parts/links.html.twig' %}
 			</div>
 		</div>
 	</div>
+	{% include 'parts/footer.html.twig' %}
 {% endblock %}
