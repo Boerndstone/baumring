@@ -21,6 +21,11 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
-	<body class="is-preload"> {% block body %}{% endblock %}
-		</body>
+	<body class="is-preload"> 
+		{% include 'parts/top-navigation.html.twig' %}
+		<main class="container-xl pb-5" style="padding-top: 80px;">
+			{% block body %}{% endblock %}
+		</main>
+		{% include 'parts/footer.html.twig' %}
+	</body>
 	</html>

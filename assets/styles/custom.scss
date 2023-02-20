@@ -1,5 +1,51 @@
+body {
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
 $primary: #29651f;
+
+
+
 @import "~mdb-ui-kit/src/mdb/scss/mdb.pro.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2.75rem;
+    padding: 1.5rem 0;  
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
 
 .btn-outline-primary {
     border: 1px solid $primary;

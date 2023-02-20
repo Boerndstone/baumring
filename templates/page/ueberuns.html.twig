@@ -1,94 +1,87 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Baumring | Über uns
+{% endblock %}
+
 {% block body %}
-	<div class="d-flex" id="wrapper">
-		{% include 'parts/navigation.html.twig' %}
-		<div id="page-content-wrapper">
-			{% include 'parts/top-navigation.html.twig' %}
-			<div class="container-fluid px-lg-5">
-				<h1 class="mt-4">Über Uns</h1>
-				<h2>Wir sind als Team stark.</h2>
-				<p>Unsere Arbeit ist allein überhaupt nicht möglich. Wenn die Arbeit Spaß macht, wird sie gut. Wir sind der Überzeugung, dass jeder Mensch ein Talent hat. Wenn jeder sein persönliches Talent einbringen darf, wird die Arbeit besser.</p>
-				<p>Unser gesamtes Team verfügt neben einer Fachausbildung in der Baumpflege über unterschiedliche Vorkenntnisse aus Handwerk, Landschaftsarchitektur, Forstwirtschaft, Pädagogik, usw.</p>
-				<p>Wir fördern uns gegenseitig und schauen über den Tellerrand hinaus. Jeder darf sich entwickeln. Wir arbeiten gemeinsam Konzepte aus, sind uns für keine Arbeit zu schade und arbeiten auf Augenhöhe.
-				</p>
-				<p>Wir sind solide gewachsen und freuen uns immer über neue Impulse.</p>
-				<p>Wir sind der Auffassung, dass jeder etwas kann.</p>
-				<p>Deswegen verfügen wir auch über integrative Plätze.</p>
-				<div class="card rounded-7">
-					<div class="card-body">
-						<h2 class="fw-bold">
-						Qualität ist Ausbildung:
-						</h2>
+	<h1>Über Uns</h1>
+	<h2>Wir sind als Team stark.</h2>
+	<p>Unsere Arbeit ist allein überhaupt nicht möglich. Wenn die Arbeit Spaß macht, wird sie gut. Wir sind der Überzeugung, dass jeder Mensch ein Talent hat. Wenn jeder sein persönliches Talent einbringen darf, wird die Arbeit besser.</p>
+	<p>Unser gesamtes Team verfügt neben einer Fachausbildung in der Baumpflege über unterschiedliche Vorkenntnisse aus Handwerk, Landschaftsarchitektur, Forstwirtschaft, Pädagogik, usw.</p>
+	<p>Wir fördern uns gegenseitig und schauen über den Tellerrand hinaus. Jeder darf sich entwickeln. Wir arbeiten gemeinsam Konzepte aus, sind uns für keine Arbeit zu schade und arbeiten auf Augenhöhe.
+	</p>
+	<p>Wir sind solide gewachsen und freuen uns immer über neue Impulse.</p>
+	<p>Wir sind der Auffassung, dass jeder etwas kann.</p>
+	<p>Deswegen verfügen wir auch über integrative Plätze.</p>
+	<div class="card rounded-7">
+		<div class="card-body">
+			<h2 class="fw-bold">
+			Qualität ist Ausbildung:
+			</h2>
 
-						<ul class="list-unstyled my-5 text-muted">
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>Forstingenieur
-							</li>
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>Fachagrarwirt für Baumpflege und Baumsanierung (Meisterniveau)
-							</li>
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>European Tree Technican (Meisterniveau)
-							</li>
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>European Tree Worker (Gesellenniveau)
-							</li>
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>Seilklettertechnik und Hebebühneneinsatz
-							</li>
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>akkreditierter Prüfer für FLL zertifizierte Baumkontrolleure
-							</li>
-							<li class="mb-3">
-								<i class="fas fa-check text-primary me-3"></i>Lehrbeauftragter an der Hochschule Weihenstephan im Bereich
-								<ol class="mt-2 ms-3 fst-italic">
-									<li>Baumkontrolle und Baumpflege</li>
-									<li>Baumkontrolle und Planung</li>
-								</ol>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<section class="my-5">
-					<h3 class="mb-3">Gerne bieten wir zur Verstärkung unseres Teams auch Probearbeitstage oder Praktikumstellen an.</h3>
-					<p class="mb-5">
-						Bei Interesse nehmen Sie gerne Kontakt zu uns auf.<br/>
-						E-Mail:
-						<a href="mailto:kontakt@baumring.de">
-							<strong>kontakt@baumring.de</strong>
-						</a>
-					</p>
-					<div class="row">
-					<div class="col-md-6 mb-4 mb-md-0 d-flex align-items-stretch">
-						<div class="card">
-							<div class="card-body d-flex flex-column">
-								<div class="d-flex align-items-center justify-content-center rounded-circle mx-auto my-4"
-								style="width: 100px; height: 200px;">
-								<img src="{{ asset('build/images/content/ral-guetezeichen.png') }}" alt="Baumpflege" title="Baumpflege" style="width: auto; max-height: 200px;">
-								</div>
-								<h3 class="text-center">RAL Gütezeichen Baumpflege</h3>
-								<a role="button" class="btn btn-primary mt-auto align-self-start" href="https://www.ral-baumpflege.de/" target="_blank">Weitere Informationen</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-6 mb-4 mb-md-0 d-flex align-items-stretch">
-						<div class="card">
-						<div class="card-body d-flex flex-column">
-							<div class="d-flex align-items-center justify-content-center rounded-circle mx-auto my-4"
-							style="width: 100px; height: 200px;">
-							<img src="{{ asset('build/images/content/61668-Umweltbaubegleiter-Logo.jpg') }}" alt="Baumpflege" title="Baumpflege" style="width: auto; max-height: 200px;">
-							</div>
-							<h3 class="text-center">Sachverständiger <br />für Umweltbaubegleitung</h3>
-							<a role="button" class="btn btn-primary mt-auto align-self-start" href="https://nuernbergerschule.de/kursangebot/sachverstaendiger/zertifizierter-sachverstaendiger-fuer-umweltbaubegleitung-ubb/#/de/classes?course_category_id=78" target="_blank">Weitere Informationen</a>
-						</div>
-						</div>
-					</div>
-					</div>
-				</section>
-			</div>
+			<ul class="list-unstyled my-5 text-muted">
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>Forstingenieur
+				</li>
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>Fachagrarwirt für Baumpflege und Baumsanierung (Meisterniveau)
+				</li>
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>European Tree Technican (Meisterniveau)
+				</li>
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>European Tree Worker (Gesellenniveau)
+				</li>
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>Seilklettertechnik und Hebebühneneinsatz
+				</li>
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>akkreditierter Prüfer für FLL zertifizierte Baumkontrolleure
+				</li>
+				<li class="mb-3">
+					<i class="fas fa-check text-primary me-3"></i>Lehrbeauftragter an der Hochschule Weihenstephan im Bereich
+					<ol class="mt-2 ms-3 fst-italic">
+						<li>Baumkontrolle und Baumpflege</li>
+						<li>Baumkontrolle und Planung</li>
+					</ol>
+				</li>
+			</ul>
 		</div>
 	</div>
-	{% include 'parts/footer.html.twig' %}
+	<section class="my-5">
+		<h3 class="mb-3">Gerne bieten wir zur Verstärkung unseres Teams auch Probearbeitstage oder Praktikumstellen an.</h3>
+		<p class="mb-5">
+			Bei Interesse nehmen Sie gerne Kontakt zu uns auf.<br/>
+			E-Mail:
+			<a href="mailto:kontakt@baumring.de">
+				<strong>kontakt@baumring.de</strong>
+			</a>
+		</p>
+		<div class="row">
+		<div class="col-md-6 mb-4 mb-md-0 d-flex align-items-stretch">
+			<div class="card">
+				<div class="card-body d-flex flex-column">
+					<div class="d-flex align-items-center justify-content-center rounded-circle mx-auto my-4"
+					style="width: 100px; height: 200px;">
+					<img src="{{ asset('build/images/content/ral-guetezeichen.png') }}" alt="Baumpflege" title="Baumpflege" style="width: auto; max-height: 200px;">
+					</div>
+					<h3 class="text-center">RAL Gütezeichen Baumpflege</h3>
+					<a role="button" class="btn btn-primary mt-auto align-self-start" href="https://www.ral-baumpflege.de/" target="_blank">Weitere Informationen</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6 mb-4 mb-md-0 d-flex align-items-stretch">
+			<div class="card">
+				<div class="card-body d-flex flex-column">
+					<div class="d-flex align-items-center justify-content-center rounded-circle mx-auto my-4"
+					style="width: 100px; height: 200px;">
+					<img src="{{ asset('build/images/content/61668-Umweltbaubegleiter-Logo.jpg') }}" alt="Baumpflege" title="Baumpflege" style="width: auto; max-height: 200px;">
+					</div>
+					<h3 class="text-center">Sachverständiger <br />für Umweltbaubegleitung</h3>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
 {% endblock %}

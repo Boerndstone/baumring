@@ -1,10 +1,116 @@
+<nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white shadow-2">
+	<div class="container-xl">
+		<div class="d-flex">
+		<button
+				class="navbar-toggler"
+				type="button"
+				data-mdb-toggle="collapse"
+				data-mdb-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+				>
+			<i class="fas fa-bars"></i>
+		</button>
+		<a class="navbar-brand" href="{{ path('startseite') }}">
+			<img 
+				src="{{ asset('build/images/svg/logo.svg') }}" 
+				style="width: 85px; height: auto;"
+				alt="Baumpflege" 
+				title="Baumpflege"
+			>
+		</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 ms-2 ps-1 ms-lg-0 ps-lg-0 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link {% if app.request.attributes.get('_route') == 'startseite' %} active {% endif %}" href="{{ path('startseite') }}">Startseite</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link {% if app.request.attributes.get('_route') == 'ueberuns' %} active {% endif %}" href="{{ path('ueberuns') }}">Über uns</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link {% if app.request.attributes.get('_route') == 'hausbaumgarten' %} active {% endif %}" href="{{ path('hausbaumgarten') }}">Privatkunden</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link {% if app.request.attributes.get('_route') == 'hausverwaltungen' %} active {% endif %}" href="{{ path('hausverwaltungen') }}">Hausverwaltunugen</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link {% if app.request.attributes.get('_route') == 'gemeinden' %} active {% endif %}" href="{{ path('gemeinden') }}">öffentliche Aufträge</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link {% if app.request.attributes.get('_route') == 'firmengelaende' %} active {% endif %}" href="{{ path('firmengelaende') }}">Firmengelände</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a
+					class="nav-link dropdown-toggle"
+					href="#"
+					id="navbarDropdownMenuLink"
+					role="button"
+					data-mdb-toggle="dropdown"
+					aria-expanded="false"
+					>
+						Leistungen
+					</a>
+					{% 
+						set links = 
+						[ 
+							{ 
+								'url': 'baumpflege', 
+								'name': 'Baumpflege',
+							}, 
+							{ 
+								'url': 'faellungen',
+								'name': 'Fällungen' 
+							},  
+							{ 
+								'url': 'pflanzungen',
+								'name': 'Pflanzungen' 
+							},
+							{ 
+								'url': 'wurzelstockentfernung', 
+								'name': 'Wurzelstockentfernung',
+							}, 
+							{ 
+								'url': 'baumkontrolle',
+								'name': 'Baumkontrolle' 
+							},  
+							{ 
+								'url': 'sondermassnahmen',
+								'name': 'Sondermaßnahmen' 
+							},
+						] 
+					%}
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					{% for value in links %}
+						<li>
+							<a 
+								href="{{ path(value.url) }}" 
+								class="dropdown-item {% if app.request.attributes.get('_route') == value.url %}active{% endif %}"
+							>{{ value.name }}</a>
+						</li>
+					{% endfor %}
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="d-flex align-items-center">
+		<a role="button" class="btn btn-primary px-3 me-3" href="tel:+4917680122245">
+			<i class="fas fa-mobile-alt fa-lg me-md-2 "></i><span class="d-none d-md-inline-block">0176/80122245</span>
+		</a>
+		<a role="button" class="btn btn-primary px-3 me-lg-3" style="text-transform: none;" href="mailto:info@baumring.de">
+			<i class="far fa-envelope fa-lg me-md-2 "></i><span class="d-none d-md-inline-block">info@baumring.de</span>
+		</button>
+		</a>
+	</div>
+</nav>
+
+{#
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 	<div class="container-fluid">
 		<div class="d-flex align-items-center">
 			<button id="sidebarToggle" type="button" class="btn btn-outline-primary me-3">
-				<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width: 30px; height: auto">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-				</svg>
+				<i class="fas fa-bars fa-lg"></i>
 			</button>
 			<p class="d-none d-md-block mb-0"><strong>Baumring:</strong> Baumpflege, Kontrollen, Pflanzungen und Fällungen</p>
 		</div>
@@ -13,8 +119,9 @@
 				<i class="fas fa-mobile-alt fa-lg me-2 d-none d-md-inline-block"></i>0176/80122245
 			</a>
 			<a role="button" class="btn btn-primary px-3 me-lg-3" style="text-transform: none;" href="mailto:info@baumring.de">
-				<i class="far fa-envelope fa-lg me-2 d-none d-md-inline-block"></i>info@baumring.de
+				<i class="far fa-envelope fa-lg me-md-2 "></i><span class="d-none d-md-inline-block">info@baumring.de</span>
 			</a>
 		</div>
 	</div>
 </nav>
+#}

@@ -1,20 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<div class="d-flex" id="wrapper">
-		{% include 'parts/navigation.html.twig' %}
-		<div id="page-content-wrapper">
-			{% include 'parts/top-navigation.html.twig' %}
-			<div class="container-fluid px-lg-5">
-				<h1 class="mt-4">Wurzelstockentfernung</h1>
-				<span class="image main"><img src="{{ asset('build/images/fullScreen/wurzelstockentfernung01.jpg') }}" alt="Wurzelstockentfernung" title="Wurzelstockentfernung"></span>
-				<p>Wurzeln nehmen bis zu 40 Prozent der Baummasse ein und brauchen mindestens 10 Jahre, bis sie vollständig zerfallen.</p>
-				<p>Das dauert Ihnen zu lang? Kein Problem. Wurzelstöcke können von uns mit einer Stockfräße schnell und unkompliziert entfernt werden. Alternativ zur Wurzelstockfräse können wir selbstverständlich auch auf Minibagger zurückgreifen. </p>
-				<p>Bei Bedarf entsorgen wir natürlich auch das anfallende Fräsgut oder Wurzelmaterial. Wenn Sie im Anschluss einfach nur einen neuen Rasen ansähen möchten, helfen wir gerne bei der Umsetzung. Alternativ führen wir natürlich auch Ersatzpflanzungen vom Baum bis zu Stauden durch.</p>
-				<hr class="major">
-				{% include 'parts/links.html.twig' %}
-			</div>
-		</div>
-	</div>
-	{% include 'parts/footer.html.twig' %}
+	<h1>Wurzelstockentfernung</h1>
+	<img src="{{ asset('build/images/fullScreen/wurzelstockentfernung01.jpg') }}" class="img-fluid rounded mb-5" alt="Wurzelstockentfernung" title="Wurzelstockentfernung">
+	<p>Wurzeln nehmen bis zu 40 Prozent der Baummasse ein und brauchen mindestens 10 Jahre, bis sie vollständig zerfallen.</p>
+	<p>Das dauert Ihnen zu lang? Kein Problem. Wurzelstöcke können von uns mit einer Stockfräße schnell und unkompliziert entfernt werden. Alternativ zur Wurzelstockfräse können wir selbstverständlich auch auf Minibagger zurückgreifen. </p>
+	<p>Bei Bedarf entsorgen wir natürlich auch das anfallende Fräsgut oder Wurzelmaterial. Wenn Sie im Anschluss einfach nur einen neuen Rasen ansähen möchten, helfen wir gerne bei der Umsetzung. Alternativ führen wir natürlich auch Ersatzpflanzungen vom Baum bis zu Stauden durch.</p>
 {% endblock %}

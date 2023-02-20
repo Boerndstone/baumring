@@ -1,28 +1,18 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	<div class="d-flex" id="wrapper">
-		{% include 'parts/navigation.html.twig' %}
-		<div id="page-content-wrapper">
-			{% include 'parts/top-navigation.html.twig' %}
-			<div class="container-fluid px-lg-5">
-				<h1 class="mt-4">Hausverwaltung - WEGs</h1>
-				<p>Wenn es um das Thema Baum geht, decken wir das gesamte Portfolio ab. Von der Kontrolle bis zur Durchführung der dazu passenden Maßnahmen. Von Baumpflege bis Fällungen inkl. Wurzelstockentfernung mit oder ohne Ersatzpflanzungen. Alles aus einer Hand.</p>
-				<span class="image main"><img src="{{ asset('build/images/fullScreen/hausverwaltung01.jpg') }}" alt="Hausverwaltung" title="Hausverwaltung" /></span>
-				<p>In Wohnanlagen sieht man vor lauter Bäumen nicht mehr, wie der aktuelle Pflegebedarf der Grünanlage ist. Was steht als nächstes an, was hat Priorität und wie lässt sich der Pflegebedarf besser planen. Welche Bäume wachsen bereits jetzt in die Fassade, wo können Folgekosten entstehen, weil Äste sich den Platz erobern. Ein Rundumpaket hilft nicht nur, die Kosten zu deckeln, sondern langfristig Kosten zu sparen.</p>
-				<p>Egal ob es um eine Baumkontrolle für den Versicherungsschutz ihrer Gebäudeversicherung geht oder um einfach den Überblick zu behalten: Wir bieten Ihnen Pflegekonzepte mit oder ohne Baumkataster an.</p>
-				<p>Wir sind ein eingespieltes Team und gewohnt, in einem geräuschempfindlichen Umfeld zu arbeiten. Wo es möglich ist, setzen wir leisen Akkugeräte ein.</p>
-				<h4>Ihre Vorteile:</h4>
-				<ul>
-					<li>Eine fachlich qualifizierte Baumkontrolle</li>
-					<li>Unterstützung bei Antragstellungen </li>
-					<li>Beratung über Durchführbarkeit und Erfolgschancen</li>
-					<li>Durchführung von Baumpflegemaßnahmen, Fällungen und Wurzelstockentfernung</li>
-					<li>Wir sind vor allem an langfristigen Pflegekonzeptionen interessiert. Ein Baum der uns ans Herz wächst, kann auch langfristig und nachhaltig erhalten werden.</li>
-				</ul>
-				{% include 'parts/links.html.twig' %}
-			</div>
-		</div>
-	</div>
-	{% include 'parts/footer.html.twig' %}
+	<h1>Hausverwaltung - WEGs</h1>
+	<p>Wenn es um das Thema Baum geht, decken wir das gesamte Portfolio ab. Von der Kontrolle bis zur Durchführung der dazu passenden Maßnahmen. Von Baumpflege bis Fällungen inkl. Wurzelstockentfernung mit oder ohne Ersatzpflanzungen. Alles aus einer Hand.</p>
+	<img src="{{ asset('build/images/fullScreen/hausverwaltung01.jpg') }}" class="img-fluid rounded mb-5" alt="Hausverwaltung" title="Hausverwaltung" />
+	<p>In Wohnanlagen sieht man vor lauter Bäumen nicht mehr, wie der aktuelle Pflegebedarf der Grünanlage ist. Was steht als nächstes an, was hat Priorität und wie lässt sich der Pflegebedarf besser planen. Welche Bäume wachsen bereits jetzt in die Fassade, wo können Folgekosten entstehen, weil Äste sich den Platz erobern. Ein Rundumpaket hilft nicht nur, die Kosten zu deckeln, sondern langfristig Kosten zu sparen.</p>
+	<p>Egal ob es um eine Baumkontrolle für den Versicherungsschutz ihrer Gebäudeversicherung geht oder um einfach den Überblick zu behalten: Wir bieten Ihnen Pflegekonzepte mit oder ohne Baumkataster an.</p>
+	<p>Wir sind ein eingespieltes Team und gewohnt, in einem geräuschempfindlichen Umfeld zu arbeiten. Wo es möglich ist, setzen wir leisen Akkugeräte ein.</p>
+	<h2>Ihre Vorteile:</h2>
+	<ul class="list-unstyled mb-5">
+		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Eine fachlich qualifizierte Baumkontrolle</li>
+		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Unterstützung bei Antragstellungen </li>
+		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Beratung über Durchführbarkeit und Erfolgschancen</li>
+		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Durchführung von Baumpflegemaßnahmen, Fällungen und Wurzelstockentfernung</li>
+		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Wir sind vor allem an langfristigen Pflegekonzeptionen interessiert. Ein Baum der uns ans Herz wächst, kann auch langfristig und nachhaltig erhalten werden.</li>
+	</ul>
 {% endblock %}
