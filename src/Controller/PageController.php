@@ -105,66 +105,106 @@ class PageController extends AbstractController
     }
 
     #[Route('/faellungen', name: 'faellungen')]
-    public function faellungen(): Response
+    public function faellungen(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/faellungen.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/pflanzungen', name: 'pflanzungen')]
-    public function pflanzungen(): Response
+    public function pflanzungen(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/pflanzungen.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/wurzelstockentfernung', name: 'wurzelstockentfernung')]
-    public function wurzelstockentfernung(): Response
+    public function wurzelstockentfernung(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/wurzelstockentfernung.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/baumkontrolle', name: 'baumkontrolle')]
-    public function control(): Response
+    public function baumkontrolle(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/baumkontrolle.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/sondermassnahmen', name: 'sondermassnahmen')]
-    public function special_action(): Response
+    public function sondermassnahmen(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/sondermassnahmen.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/referenzen', name: 'referenzen')]
-    public function reference(): Response
+    public function referenzen(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/referenzen.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/impressum', name: 'impressum')]
-    public function impressum(): Response
+    public function impressum(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/impressum.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/datenschutz', name: 'datenschutz')]
-    public function datenschutz(): Response
+    public function datenschutz(Request $request, EntityManagerInterface $entityManager): Response
     {
+         $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/datenschutz.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 }

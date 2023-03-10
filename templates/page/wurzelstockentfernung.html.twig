@@ -1,9 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Baumring | {{ getContent.headline }}
+{% endblock %}
+
 {% block body %}
-	<h1>Wurzelstockentfernung</h1>
+	<h1>{{ getContent.headline }}</h1>
 	<img src="{{ asset('build/images/fullScreen/wurzelstockentfernung01.jpg') }}" class="img-fluid rounded mb-5" alt="Wurzelstockentfernung" title="Wurzelstockentfernung">
-	<p>Wurzeln nehmen bis zu 40 Prozent der Baummasse ein und brauchen mindestens 10 Jahre, bis sie vollständig zerfallen.</p>
-	<p>Das dauert Ihnen zu lang? Kein Problem. Wurzelstöcke können von uns mit einer Stockfräße schnell und unkompliziert entfernt werden. Alternativ zur Wurzelstockfräse können wir selbstverständlich auch auf Minibagger zurückgreifen. </p>
-	<p>Bei Bedarf entsorgen wir natürlich auch das anfallende Fräsgut oder Wurzelmaterial. Wenn Sie im Anschluss einfach nur einen neuen Rasen ansähen möchten, helfen wir gerne bei der Umsetzung. Alternativ führen wir natürlich auch Ersatzpflanzungen vom Baum bis zu Stauden durch.</p>
+	{{ getContent.content|raw }}
 {% endblock %}

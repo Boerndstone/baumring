@@ -1,28 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Baumring | {{ getContent.headline }}
+{% endblock %}
+
 {% block body %}
-	<h1>Fällungen</h1>
-	<p>Wir führen Baumfällungen aller Art durch – auch Problem- und Risikofällungen. Egal ob Sturmschäden oder geplante Fällungen, wir helfen Ihnen gerne.</p>
+	<h1>{{ getContent.headline }}</h1>
 	<img src="{{ asset('build/images/fullScreen/baumfaellungen02.jpg') }}" class="img-fluid rounded mb-5" alt="Baumfällungen" title="Baumfällungen">
-	<p>Wir kümmern uns um jedes Detail: Von der Absperrung des Gefahrenbereichs bis zum Zerkleinern und Beseitigen der Grünabfälle.</p>
-	<div class="row mt-5">
-		<div class="col-md-4 mb-4 d-flex align-items-stretch">
-			<div class="card mb-3">
-				<img src="{{ asset('build/images/content/faellungen.jpg') }}" class="card-img-top" alt="Wild Landscape"/>
-				<div class="card-body">
-					<h5 class="card-title">Fällung in Seilklettertechnik</h5>
-					<p class="card-text">Schlechte Zugangsmöglichkeiten und enge Platzverhältnisse, das ist genau der Einsatzbereich der Seilklettertechnik. Wir arbeiten bereits seit 2008 mit dieser Methode. Damit die Stämme und Äste auch sicher auf dem Boden landen, können wir die mithilfe von Abseiltechniken (Rigging) auch komplizierte Fällungen sicher durchführen. Der Einsatz von Seiltechniken ermöglicht uns ein effektives Arbeiten, brauchen dafür allerdings unser eingespieltes Team. Bodenpersonal und Kletterer arbeiten dabei als Einheit und sind immer zu zweit auf der Baustelle.</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 mb-4 d-flex align-items-stretch">
-			<div class="card mb-3">
-				<img src="{{ asset('build/images/content/baumfaellungen.jpg') }}" class="card-img-top" alt="Wild Landscape"/>
-				<div class="card-body">
-					<h5 class="card-title">Baumfällung (Einfach ist nicht immer schlechter.)</h5>
-					<p class="card-text">Wenn ein Baum im Ganzen, also in einem Stück, gefällt werden kann, dann machen wir das auch. Wir passen die Technik den Gegebenheiten an. Gefahren wie Straßen, Gebäude, Teichanlagen oder Stromleitungen werden von uns natürlich vorher beurteilt. Die Aufarbeitung von Sturmschäden, wo Holz unter Spannung stehen kann, gehört auch zu unserem Aufgabenbereich. Wir arbeiten konzentriert und haben immer noch Respekt vor unserer Arbeit. </p>
-				</div>
-			</div>
-		</div>
-	</div>
+	{{ getContent.content|raw }}
 {% endblock %}
