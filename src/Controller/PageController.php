@@ -3,64 +3,104 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Content;
+use Doctrine\ORM\EntityManagerInterface;
 
 class PageController extends AbstractController
 {
     #[Route('/', name: 'startseite')]
-    public function index(): Response
+    public function index(Request $request, EntityManagerInterface $entityManager): Response
     {
+
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/index.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/ueberuns', name: 'ueberuns')]
-    public function ueberuns(): Response
+    public function ueberuns(Request $request, EntityManagerInterface $entityManager): Response
     {
+
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/ueberuns.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/hausbaumgarten', name: 'hausbaumgarten')]
-    public function hausbaumgarten(): Response
+    public function hausbaumgarten(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/hausbaumgarten.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/hausverwaltungen', name: 'hausverwaltungen')]
-    public function hausverwaltungen(): Response
+    public function hausverwaltungen(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/hausverwaltungen.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/gemeinden', name: 'gemeinden')]
-    public function gemeinden(): Response
+    public function gemeinden(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/gemeinden.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/firmengelaende', name: 'firmengelaende')]
-    public function firmengelaende(): Response
+    public function firmengelaende(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/firmengelaende.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 
     #[Route('/baumpflege', name: 'baumpflege')]
-    public function baumpflege(): Response
+    public function baumpflege(Request $request, EntityManagerInterface $entityManager): Response
     {
+        $routeName = $request->attributes->get('_route');
+
+        $contentRepository = $entityManager->getRepository(Content::class);
+        $getContent = $contentRepository->findOneBySomeField($routeName);
+
         return $this->render('page/baumpflege.html.twig', [
-            'controller_name' => 'PageController',
+            'getContent' => $getContent,
         ]);
     }
 

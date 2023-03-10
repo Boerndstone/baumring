@@ -1,27 +1,10 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Baumring | {{ getContent.headline }}
+{% endblock %}
+
 {% block body %}
-	<h1>Städte, Gemeinden und Kommunen - öffentliche Auftraggeber</h1>
-	<p>Seit 2008 arbeiten wir regelmäßig für Städte, Gemeinden und Kommunen und andere öffentliche Auftraggeber wie z.B. Landratsämter, sowie private Schulen oder Bildungseinrichtungen.</p>
+	<h1>{{ getContent.headline }}</h1>
 	<img src="{{ asset('build/images/fullScreen/staedte01.jpg') }}" class="img-fluid rounded mb-5" alt="Städte, Gemeinden und Kommunen - öffentliche Auftraggeber" title="Städte, Gemeinden und Kommunen - öffentliche Auftraggeber" />
-	<p>Unser Team besteht aus Facharbeitern, unterstützenden Arbeitskräften und zwei integrativen Stellen. Wir können flexibel in zwei vollwertigen Teams agieren. Dabei ist auf jeder Baustelle mindestens ein European Tree Worker anwesend.</p>
-	<h2>Dank unserer umfangreichen Qualifikationen können wir flexibel auf den aktuellen Bedarf ihrer Ausschreibung reagieren: </h2>
-	<ul class="list-unstyled mb-5">
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Kletterer SKT A/B</li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>European Tree Worker ETW</li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>European Tree Technican ETT</li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Fachagrarwirt Baumpflege und Baumsanierung </li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Forstingenieur (FH).</li>
-	</ul>
-	<p>Wir arbeiten je nach Maßnahme in Seilklettertechnik SKT, Hebebühne und passendem Gerät für die Entsorgung.</p>
-	<p>Neben Baumpflegemaßnahmen können wir selbstständig die dazugehörige Baustellenabsicherung gem. RSA durchführen.</p>
-	<p>Wir arbeiten nach aktuell gültigen Richtlinien wie der ZTV Baumpflege oder der RAS LP-4. Sonderleistungen wie die Bekämpfung von Schädlingen wie den Eichenprozessionsspinner oder die Entfernung von Goldafternestern gehört zu unserem Portfolio.</p>
-	<p>Wir engagieren uns aktiv als Prüfer bei der Ausbildung zum FLL zertifizierten Baumkontrolleur. Deshalb besuchen wir regelmäßig Aus und Weiterbildung, um auf dem neuesten Wissenstand zu bleiben. </p>
-	<ul class="list-unstyled mb-5">
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Wir erhalten und pflanzen Bäume</li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Wir entfernen Bäume, von der Baumfällung bis zur Rodung des Wurzelstocks</li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Wir kontrollieren Bäume</li>
-		<li class="mb-3"><i class="fas fa-check text-primary me-3"></i>Wir schützen Bäume</li>
-	</ul>
-	<a href="{{ path('referenzen') }}" class="d-block mb-5"><b>Referenzen</b></a>
+	{{ getContent.content|raw }}
 {% endblock %}
