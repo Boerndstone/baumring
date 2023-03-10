@@ -1,4 +1,5 @@
 const Encore = require("@symfony/webpack-encore");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -14,7 +15,39 @@ Encore
   // only needed for CDN's or subdirectory deploy
   //.setManifestKeyPrefix('build/')
 
-  .copyFiles({
+  .copyFiles([
+    {
+      from: "./assets/images",
+      to: "images/[path][name].[ext]",
+    },
+  ])
+
+  .addLoader({
+    test: /\.(gif|png|jpg|jpe?g|svg|webp)$/i,
+    loader: "image-webpack-loader",
+    options: {
+      mozjpeg: {
+        progressive: true,
+      },
+      // optipng.enabled: false will disable optipng
+      optipng: {
+        enabled: false,
+      },
+      pngquant: {
+        quality: [0.65, 0.9],
+        speed: 4,
+      },
+      gifsicle: {
+        interlaced: false,
+      },
+      // the webp option will enable WEBP
+      webp: {
+        quality: 75,
+      },
+    },
+  })
+
+  /*.copyFiles({
     from: "./assets/images",
 
     // optional target path, relative to the output dir
@@ -25,8 +58,39 @@ Encore
 
     // only copy files matching this pattern
     pattern: /\.(png|jpg|jpeg|svg)$/,
-  })
+  })*/
 
+  /*
+  .addLoader({
+    test: /\.(jpg|jpe?g|png)$/i,
+    loader: ImageMinimizerPlugin.loader,
+    enforce: "pre",
+    options: {
+      generator: [
+        {
+          preset: "webp",
+          implementation: ImageMinimizerPlugin.sharpGenerate,
+          options: {
+            plugins: ["sharp-webp"],
+            encodeOptions: {
+              webp: {
+                quality: 80,
+              },
+            },
+          },
+          // Annoyingly, file URLs that are altered (e.g. PNG to WebP) by this
+          // loader appear to incorrectly generate paths using the platform's path
+          // separator. This means that if built on Windows, the URLs will use a
+          // backslash (\), which is not a path separator in an HTTP URL but rather
+          // an escape character, meaning that the URL will be incorrect and a 404.
+          filename: function (file) {
+            return file.filename.replaceAll("\\", "/");
+          },
+        },
+      ],
+    },
+  })
+*/
   /*
    * ENTRY CONFIG
    *
