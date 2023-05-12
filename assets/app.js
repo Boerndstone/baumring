@@ -51,3 +51,5 @@ const imagesContext = require.context(
   /\.(png|jpg|jpeg|gif|ico|svg|webp)$/
 );
 imagesContext.keys().forEach(imagesContext);
+
+import "vanilla-cookieconsent/src/cookieconsent.js";

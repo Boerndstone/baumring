@@ -1,0 +1,119 @@
+<script>
+    window.addEventListener('load', function(){
+
+        var cc = initCookieConsent();
+
+        cc.run({
+            current_lang: 'de',
+            autoclear_cookies: true,                   // default: false
+            page_scripts: true,                        // default: false
+
+            // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+            // delay: 0,                               // default: 0
+            // auto_language: '',                      // default: null; could also be 'browser' or 'document'
+            // autorun: true,                          // default: true
+            // force_consent: false,                   // default: false
+            // hide_from_bots: true,                   // default: true
+            // remove_cookie_tables: false             // default: false
+            // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
+            // cookie_expiration: 182,                 // default: 182 (days)
+            // cookie_necessary_only_expiration: 182   // default: disabled
+            // cookie_domain: location.hostname,       // default: current domain
+            // cookie_path: '/',                       // default: root
+            // cookie_same_site: 'Lax',                // default: 'Lax'
+            // use_rfc_cookie: false,                  // default: false
+            // revision: 0,                            // default: 0
+
+            onFirstAction: function(user_preferences, cookie){
+                // callback triggered only once on the first accept/reject action
+            },
+
+            onAccept: function (cookie) {
+                // callback triggered on the first accept/reject action, and after each page load
+            },
+
+            onChange: function (cookie, changed_categories) {
+                // callback triggered when user changes preferences after consent has already been given
+            },
+
+            languages: {
+                'en': {
+                    consent_modal: {
+                        title: 'Datenschutz-Einstellungen',
+                        description: 'Wenn Sie auf unsere Website zugreifen, d.h., wenn Sie sich nicht registrieren oder anderweitig Informationen übermitteln, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet-Service-Providers, Ihre IP-Adresse und ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen. <button type="button" data-cc="c-settings" class="cc-link">Einstellungen individuell festlegen</button>',
+                        primary_btn: {
+                            text: 'Alle akzeptieren',
+                            role: 'accept_all'
+                        },
+                        secondary_btn: {
+                            text: 'Weiter ohne Einwilligung',
+                            role: 'accept_necessary'
+                        }
+                    },
+                    settings_modal: {
+                        title: 'Cookie Einstellungen',
+                        save_settings_btn: 'Einstellungen speichern',
+                        accept_all_btn: 'Alle akzeptieren',
+                        reject_all_btn: 'Weiter ohne Einwilligung',
+                        close_btn_label: 'Close',
+                        // cookie_table_caption: 'Cookie list',
+                        cookie_table_headers: [
+                            {col1: 'Name'},
+                            {col2: 'Domain'},
+                            {col3: 'Expiration'},
+                            {col4: 'Description'}
+                        ],
+                        blocks: [
+                            {
+                                title: 'Cookie Verwendung 📢',
+                                description: 'Diese Website verwendet Cookies, um Ihr Erlebnis beim Navigieren durch die Website zu verbessern. Von diesen Cookies werden die nach Bedarf kategorisierten Cookies in Ihrem Browser gespeichert, da sie für das Funktionieren grundlegender Funktionen unerlässlich sind. <a href="https://baumring.de/datenschutz" class="cc-link">Datenschutz</a>.'
+                            }, {
+                                title: 'Essentielle Cookies',
+                                description: 'Essenzielle Services sind für die grundlegende Funktionalität der Website erforderlich. Sie enthalten nur technisch notwendige Services. Diesen Services kann nicht widersprochen werden.',
+                                toggle: {
+                                    value: 'necessary',
+                                    enabled: true,
+                                    readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                }
+                            }, {
+                                title: 'Funktional',
+                                description: 'Funktionale Services sind notwendig, um über die wesentliche Funktionalität der Website hinausgehende Features wie hübschere Schriftarten, Videowiedergabe oder interaktive Web 2.0-Features bereitzustellen. Inhalte von z.B. Video- und Social Media-Plattformen sind standardmäßig gesperrt und können zugestimmt werden. Wenn dem Service zugestimmt wird, werden diese Inhalte automatisch ohne weitere manuelle Einwilligung geladen.',
+                                toggle: {
+                                    value: 'analytics',     // your cookie category
+                                    enabled: false,
+                                    readonly: false
+                                },
+                                cookie_table: [             // list of all expected cookies
+                                    {
+                                        col1: '^_ga',       // match all cookies starting with "_ga"
+                                        col2: 'google.com',
+                                        col3: '2 years',
+                                        col4: 'description ...',
+                                        is_regex: true
+                                    },
+                                    {
+                                        col1: '_gid',
+                                        col2: 'google.com',
+                                        col3: '1 day',
+                                        col4: 'description ...',
+                                    }
+                                ]
+                            }, {
+                                title: 'Statistik',
+                                description: 'Statistik-Services werden benötigt, um pseudonymisierte Daten über die Besucher der Website zu sammeln. Die Daten ermöglichen es uns, die Besucher besser zu verstehen und die Website zu optimieren.',
+                                toggle: {
+                                    value: 'targeting',
+                                    enabled: false,
+                                    readonly: false
+                                }
+                            }, {
+                                title: 'Weitere Informationen',
+                                description: 'Für weitere Fragen zu unseren Datenschutz-Einstellungen kontaktieren Sie uns gerne <a class="cc-link" href="mailto:info@baumring.de">info@baumring.de</a>.',
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    });
+</script>

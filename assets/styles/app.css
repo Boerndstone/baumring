@@ -3,6 +3,22 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
 
+@import "~vanilla-cookieconsent/src/cookieconsent.css";
+
+#cc--main {
+    .cc_div {
+        color: #000;
+    }
+    .cc-link {
+        color: #29651f;
+        border-bottom: 1px solid #29651f;
+    }
+        #c-bns button:first-child,
+        #s-bns button:first-child {
+        background-color: #29651f;
+    }
+}
+
 
 /*body,
 input,
