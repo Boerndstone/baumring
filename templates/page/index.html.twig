@@ -6,3 +6,8 @@
 	{{ getContent.content|raw }}
 	
 {% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('map') }}
+{% endblock %}
