@@ -1,0 +1,11 @@
+easy_admin:
+  entities:
+    YourEntity:
+      class: App\Entity\YourEntity
+      form:
+        fields:
+          - {
+              property: "content",
+              type: "field",
+              template: "admin/fields/trix_editor.html.twig",
+            }

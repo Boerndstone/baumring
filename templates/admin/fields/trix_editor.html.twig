@@ -1,0 +1,35 @@
+{% extends '@EasyAdmin/default/field_text.html.twig' %}
+
+{% block content %}
+    {{ parent() }}
+    <trix-editor input="trix_editor_{{ field.uniqueId }}"></trix-editor>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        document.addEventListener('trix-initialize', function() {
+            var editor = document.querySelector('trix-editor');
+
+            var toolbarElement = editor.toolbarElement;
+            toolbarElement.setAttribute('data-trix-button-group', 'block-tools');
+            
+            var headingButtons = [
+                { tagName: 'h1', text: 'Heading 1' },
+                { tagName: 'h2', text: 'Heading 2' },
+                { tagName: 'h3', text: 'Heading 3' },
+                { tagName: 'h4', text: 'Heading 4' }
+            ];
+            
+            headingButtons.forEach(function(button) {
+                var buttonElement = document.createElement('button');
+                buttonElement.setAttribute('type', 'button');
+                buttonElement.setAttribute('data-trix-attribute', 'heading');
+                buttonElement.setAttribute('data-trix-value', button.tagName.toLowerCase());
+                buttonElement.setAttribute('class', 'trix-button');
+                buttonElement.innerText = button.text;
+                toolbarElement.appendChild(buttonElement);
+            });
+        });
+    </script>
+{% endblock %}

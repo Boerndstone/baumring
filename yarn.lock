@@ -5516,11 +5516,6 @@ uuid@^8.3.0, uuid@^8.3.2:
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
-vanilla-cookieconsent@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/vanilla-cookieconsent/-/vanilla-cookieconsent-2.9.0.tgz#ff3159b6dc7aca0a37728a9870e1b62de05e43e3"
-  integrity sha512-TBIJJXOTE59jJa161zXyzCn92YFgt8iaNdRxzt2+pJzBL/Jf9wZKJutdjFSIUSu2Ell91F3wM5ZtnnaHpi3J+w==
-
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
